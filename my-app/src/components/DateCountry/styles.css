@@ -1,3 +1,10 @@
 .paper{
     width: 100%;
 }
+.grid{
+    width: 95%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

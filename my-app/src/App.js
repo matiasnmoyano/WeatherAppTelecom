@@ -48,11 +48,12 @@ function App() {
    ]
   useEffect(() => {
       if(selectCountry !== "actual" && selectCountry !== null){
+        setLoading(true)
         countries.map((c) => {
           if(c.name === selectCountry){
             Axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${c.lat}&lon=${c.long}&lang=esp&exclude=hourly,minutely&appid=${apikey}`)
             .then((result) => {
-              setData(result)
+              setData(result.data)
             })
           }
         })
@@ -60,7 +61,6 @@ function App() {
         setData(actualCountry)
       }
   }, [selectCountry]);
-
   useEffect(() => {
     setTimeout(() => {
       Axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${actualPosition.lat}&lon=${actualPosition.long}&lang=esp&exclude=hourly,minutely&appid=${apikey}`)
@@ -70,14 +70,14 @@ function App() {
       })
     }, 2000);  
   }, []);
-  
+  console.log(data)
   return (
       <div className="App">
           <section className="section">
           <SelectCountries selectCountry={selectCountry} setSelectCountry={setSelectCountry}/>
           </section>
           <main className="main">
-          <DateCountry selectCountry={selectCountry} setSelectCountry={setSelectCountry} actualCountry={actualCountry}/>
+          <DateCountry selectCountry={data}/>
           </main>
       </div>
   );

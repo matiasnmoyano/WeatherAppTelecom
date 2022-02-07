@@ -2,7 +2,7 @@ import React from "react";
 import './styles.css'
 import {Paper,Button} from "@mui/material"
 export default function SelectCountries (props) {
-    const {selectCountry,setSelectCountry} = props
+    const {setSelectCountry} = props
     function onClick (name) {
         setSelectCountry(name)
     }

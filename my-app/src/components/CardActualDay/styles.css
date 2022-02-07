@@ -5,9 +5,18 @@
     flex-direction: column;
     padding: 15px;
     margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.info{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
 .secondaryInfo{
-    margin-top: 30px !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
 }

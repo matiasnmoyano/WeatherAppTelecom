@@ -26,3 +26,6 @@ DateCountry : En este componente se renderiza CardActualDay y CardNextDays. Adem
 SelectCountries : En este componente se encuentra el selector de ciudades, y setea la ciudad seleccionada.
 
 Para consultar a la Api utilice Axios, y la api de Open Weather App
+
+# ideas para agregar al proyecto
+Con un poco más de tiempo, podría agregar un loading para que sea mas amigable para el usuario, y también una barra de búsqueda para agregar los paises que desee el usuario.

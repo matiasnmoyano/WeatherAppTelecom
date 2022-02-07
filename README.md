@@ -1,7 +1,7 @@
 # WeatherAppTelecom
 Challenge sobre una WeatherApp, donde podemos ver 6 selectores de lado izquierdo de la pantalla, que muestran diferentes ciudades, entre ellas la ciudad actual.
 
-#Levantar app
+# Levantar app
 Para levantar la aplicacion hay que clonar el proyecto en su computadora, luego entrar a la carpeta "myapp" y correr
 ```bash
 npm install
@@ -12,7 +12,7 @@ npm install
 ```
 Esto va a levantar la aplicación de forma local en el puerto 3000
 
-#Diseño y desarrollo de la app
+# Diseño y desarrollo de la app
 Para el diseño utilicé la libreria MUI (Material Ui) y apliqué "papers" sombreados para separar la información principal del dia actual y la cuidad seleccionada, con la informacón de los dias siguientes y por otro lado el selector.
 Respecto a la estructura de carpetas agregué a la estructura general de "create-react-app", una carpeta llamda components, donde se encuentran carpetas con los nombres de los componentes, y dentro sus archivos jsx y css.
 Realicé 4 componentes:
